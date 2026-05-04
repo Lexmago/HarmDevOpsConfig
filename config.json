@@ -6,7 +6,8 @@
         "git fetch origin main",
         "git checkout main",
         "git pull origin main",
-        "git fetch --prune"
+        "git fetch --prune",
+        "git config --global credential.helper manager"
       ]
     },
     {
