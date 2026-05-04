@@ -27,7 +27,7 @@
     {
       "label": "Push",
       "steps": [
-        "git push"
+        "git push origin {{currentBranch}}"
       ]
     }
   ]
