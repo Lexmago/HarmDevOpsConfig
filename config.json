@@ -3,7 +3,10 @@
     {
       "label": "Actualizar repo",
       "steps": [
-        "git pull origin main"
+        "git fetch origin main",
+        "git checkout main",
+        "git pull origin main",
+        "git fetch --prune"
       ]
     },
     {
@@ -27,7 +30,7 @@
     {
       "label": "Push",
       "steps": [
-        "git push origin {{currentBranch}}"
+        "git push -u origin {{currentBranch}}"
       ]
     }
   ]
