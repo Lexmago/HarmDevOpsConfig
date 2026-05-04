@@ -1,0 +1,34 @@
+{
+  "buttons": [
+    {
+      "label": "Actualizar repo",
+      "steps": [
+        "git pull origin main"
+      ]
+    },
+    {
+      "label": "Crear rama",
+      "steps": [
+        "git checkout -b {{branch}}"
+      ]
+    },
+    {
+      "label": "Agregar cambios",
+      "steps": [
+        "git add ."
+      ]
+    },
+    {
+      "label": "Commit",
+      "steps": [
+        "git commit -m \"{{message}}\""
+      ]
+    },
+    {
+      "label": "Push",
+      "steps": [
+        "git push"
+      ]
+    }
+  ]
+}
