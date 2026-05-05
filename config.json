@@ -25,7 +25,7 @@
       "label": "Agregar cambios",
       "steps": [
         "git add .",
-        "git diff --cached --name-only"
+        "git status --short"
       ]
     },
     {
