@@ -5,7 +5,7 @@
       "steps": [
         "git fetch origin main",
         "git checkout main",
-        "git pull origin main",
+        "git reset --hard origin/main",
         "git fetch --prune"
       ]
     },
@@ -13,6 +13,12 @@
       "label": "Crear rama",
       "steps": [
         "git checkout -b {{branch}}"
+      ]
+    },
+    {
+      "label": "Abrir VSCode",
+      "steps": [
+        "code ."
       ]
     },
     {
